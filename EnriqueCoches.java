@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-public class EmilioFernandez {
+public class EnriqueCoches {
   private String marca;
   private String modelo;
   private int anyo;
@@ -22,7 +22,7 @@ public class EmilioFernandez {
    * @param año    Año de matriculacion. No puede ser anterior a 1950
    * @param valor  Valor del coche. Tiene que ser mayor que 0
    */
-  public EmilioFernandez(String marca, String modelo, int anyo, double valor) {
+  public EnriqueCoches(String marca, String modelo, int anyo, double valor) {
     anyadirCoches();
     if (listaMarcasCoche.contains(marca)) {
       this.marca = marca;
