@@ -4,7 +4,7 @@ import java.util.Random;
 public class AgustinNahuelBernalSita {
 	
 	/**
-	 * Método que hace como Francis e aprueba o desaprueba a alumnos
+	 * Método que hace como F. e aprueba o desaprueba a alumnos
 	 * @return Devuelve la nota adquirida
 	 */
 	
@@ -47,4 +47,27 @@ public class AgustinNahuelBernalSita {
 	        }
 	        return resultado;
 	    }
+		
+		/**
+		 * Esta clase indica si los números ingresados están desordenados ascendentemente, descendentemente o desordenados
+		 * @param valor1 Un valor numérico entero 
+		 * @param valor2 Un valor numérico entero
+		 * @param valor3 Un valor numérico entero
+		 * @param valor4 Un valor numérico entero
+		 * @param valor5 Un valor numérico entero
+		 * @return Devuelve lo indicado en el título de la clase
+		 */
+		public String ordenValores(int valor1, int valor2, int valor3, int valor4, int valor5) {
+			String resultado="";
+			if((valor1<valor2)&&(valor2<valor3)&&(valor3<valor4)&&(valor4<valor5)) {
+				resultado="Valores ordenados ascendentemente";
+			}
+			else if((valor5<valor4)&&(valor4<valor3)&&(valor3<valor2)&&(valor2<valor1)) {
+				resultado="Valores ordenados descendentemente";
+			}
+			else {
+				resultado="Valores desordenados";
+			}
+			return resultado;
+		}
 }
